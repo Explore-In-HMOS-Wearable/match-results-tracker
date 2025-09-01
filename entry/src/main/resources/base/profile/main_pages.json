@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/sports/SportsPage",
+    "pages/matches/MatchesPage",
+    "pages/splash/SplashPage"
+  ]
+}
