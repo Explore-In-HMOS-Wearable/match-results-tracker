@@ -1,4 +1,3 @@
-import { router } from '@kit.ArkUI';
 import { basketballColor, footballColor, volleyballColor } from '../../common/Constants';
 
 @Entry
@@ -21,7 +20,7 @@ struct SplashPage {
   onAnimationFinish(intervalId: number) {
     clearInterval(intervalId);
     setTimeout(() => {
-      router.replaceUrl({
+      this.getUIContext().getRouter().pushUrl({
         url: 'pages/Index'
       })
     }, 1000)

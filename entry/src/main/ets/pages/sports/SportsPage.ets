@@ -1,4 +1,3 @@
-import { router } from '@kit.ArkUI';
 import { Sport } from '../../models/Sport';
 import { sportsViewModel } from '../../viewmodels/SportsViewModel';
 
@@ -6,27 +5,31 @@ import { sportsViewModel } from '../../viewmodels/SportsViewModel';
 @Component
 struct SportsPage {
   onBackPress(): boolean | void {
-    router.back()
+    this.getUIContext().getRouter().back()
   }
 
-  // '#ff298800'
   build() {
     Swiper() {
       ForEach(sportsViewModel, (item: Sport) => {
         Column() {
           Blank().height('10%')
+
           Image(item.image)
             .aspectRatio(1)
             .height('50%')
             .clipShape(
               new Circle({ height: '100%', width: '100%' })
             )
+
           Blank().height('3%')
+
           Text(item.name)
             .fontColor(Color.White)
             .fontWeight(800)
             .fontSize(20)
+
           Blank().height('3%')
+
           Button() {
             Text('Show Matches')
               .fontWeight(900)
@@ -37,11 +40,10 @@ struct SportsPage {
           .borderRadius(5)
           .padding(5)
           .onClick(() => {
-            router.pushUrl(
-              {
-                url: 'pages/matches/MatchesPage',
-                params: { sportType: item.type }
-              }
+            this.getUIContext().getRouter().pushUrl({
+              url: 'pages/matches/MatchesPage',
+              params: { sportType: item.type }
+            }
             )
           })
         }

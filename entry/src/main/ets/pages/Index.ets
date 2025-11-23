@@ -1,5 +1,4 @@
 import { AnimatedText } from '../views/index/AnimatedText';
-import { router } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -21,15 +20,18 @@ struct Index {
           .fontColor(Color.White)
           .fontWeight(800)
           .fontSize(30)
+
         Blank().height('5%')
+
         Button() {
           Text('Discover')
             .fontWeight(900)
             .fontColor(Color.Black)
         }
         .onClick(() => {
-          router.pushUrl(
-            { url: 'pages/sports/SportsPage' }
+          this.getUIContext().getRouter().pushUrl({
+            url: 'pages/sports/SportsPage'
+          }
           )
         })
         .backgroundColor('#ff36ff00')

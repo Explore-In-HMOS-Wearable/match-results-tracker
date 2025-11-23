@@ -1,7 +1,7 @@
 {
   "app": {
     "bundleName": "com.hmosdemos.match_results_tracker",
-    "vendor": "example",
+    "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",
     "icon": "$media:layered_image",
