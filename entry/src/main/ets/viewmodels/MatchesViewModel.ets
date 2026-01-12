@@ -11,6 +11,8 @@ export class MatchesViewModel {
         return basketballColor;
       case SportType.volleyball:
         return volleyballColor;
+      default:
+        return footballColor;
     }
   }
 
@@ -22,6 +24,8 @@ export class MatchesViewModel {
         return basketballMatchesData;
       case SportType.volleyball:
         return volleyballMatchesData;
+      default:
+        return footballMatchesData;
     }
   }
 }

@@ -1,53 +1,35 @@
-import { AnimatedText } from '../views/index/AnimatedText';
+import { HomePage } from './home/HomePage';
+import { MatchesPage } from './matches/MatchesPage';
+import { SplashPage } from './splash/SplashPage';
+import { SportsPage } from './sports/SportsPage';
 
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
+  @Provide('pageStack') pageStack: NavPathStack = new NavPathStack();
+
+  @Builder
+  Pages(name: string) {
+    if (name === 'HomePage') {
+      HomePage();
+    } else if (name === 'MatchesPage') {
+      MatchesPage()
+    } else if (name === 'SplashPage') {
+      SplashPage()
+    } else if (name === 'SportsPage') {
+      SportsPage()
+    }
+  }
 
   build() {
-    Row() {
-      Column() {
-        Flex({ justifyContent: FlexAlign.Center }) {
-          Text('Track ')
-            .fontColor(Color.White)
-            .fontWeight(800)
-            .fontSize(30)
-          AnimatedText({ message: 'Latest' })
+    Navigation(this.pageStack)
+      .mode(NavigationMode.Stack)
+      .navDestination(this.Pages)
+      .hideNavBar(true)
+      .onAppear(() => {
+        if (this.pageStack.getAllPathName().length === 0) {
+          this.pageStack.pushPathByName('HomePage', null);
         }
-
-        Text('Matches')
-          .fontColor(Color.White)
-          .fontWeight(800)
-          .fontSize(30)
-
-        Blank().height('5%')
-
-        Button() {
-          Text('Discover')
-            .fontWeight(900)
-            .fontColor(Color.Black)
-        }
-        .onClick(() => {
-          this.getUIContext().getRouter().pushUrl({
-            url: 'pages/sports/SportsPage'
-          }
-          )
-        })
-        .backgroundColor('#ff36ff00')
-        .padding(10)
-        .type(ButtonType.Normal)
-        .borderRadius(10)
-      }
-      .alignItems(HorizontalAlign.Center)
-    }
-    .alignItems(VerticalAlign.Center)
-    .linearGradient({
-      direction: GradientDirection.Bottom,
-      repeating: false,
-      colors: [[0xff00470b, 0.5], [0x000000, 1]]
-    })
-    .height('100%')
-    .width('100%')
+      })
   }
 }

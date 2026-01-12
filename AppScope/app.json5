@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.match_results_tracker",
+    "bundleName": "com.hmosdemos.wearable.match_results_tracker",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

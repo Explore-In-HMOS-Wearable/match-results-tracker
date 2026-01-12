@@ -64,7 +64,7 @@ entry/src/main/ets/
 
 - Huawei Watch 5
 
-# LICENSE
+# License
 
 **Match Results Tracker** is distributed under the terms of the MIT License.
 See the [LICENSE](/LICENSE) for more information.
