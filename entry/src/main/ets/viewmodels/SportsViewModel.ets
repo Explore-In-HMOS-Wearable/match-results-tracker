@@ -4,19 +4,19 @@ import { Sport } from '../models/Sport';
 
 export const sportsViewModel: Array<Sport> = [
   new Sport(
-    'Football',
+    $r('app.string.sport_football'),
     footballColor,
     $rawfile('football.png'),
     SportType.football,
   ),
   new Sport(
-    'Basketball',
+    $r('app.string.sport_basketball'),
     basketballColor,
     $rawfile('basketball.png'),
     SportType.basketball,
   ),
   new Sport(
-    'Volleyball',
+    $r('app.string.sport_volleyball'),
     volleyballColor,
     $rawfile('volleyball.png'),
     SportType.volleyball,

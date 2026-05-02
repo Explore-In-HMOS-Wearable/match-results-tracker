@@ -7,29 +7,40 @@ export struct SplashPage {
   @State animationIndex: number = 0;
   @State rotateAnimation: number = 0;
   @Consume('pageStack') pageStack: NavPathStack;
+  intervalId: number = -1;
 
   aboutToAppear(): void {
-    const intervalId = setInterval(() => {
-      this.animationIndex++;
-      if (this.animationIndex === 3) {
-        this.onAnimationFinish(intervalId);
+    this.intervalId = setInterval(() => {
+      if (this.animationIndex >= this.imagesSources.length - 1) {
+        this.onAnimationFinish();
+      } else {
+        this.animationIndex++;
       }
     }, 1000);
   }
 
-  onAnimationFinish(intervalId: number) {
-    clearInterval(intervalId);
+  aboutToDisappear(): void {
+    if (this.intervalId !== -1) {
+      clearInterval(this.intervalId);
+      this.intervalId = -1;
+    }
+  }
+
+  onAnimationFinish() {
+    if (this.intervalId !== -1) {
+      clearInterval(this.intervalId);
+      this.intervalId = -1;
+    }
     setTimeout(() => {
-      this.pageStack.pushPathByName('Index', null);
+      this.pageStack.replacePathByName('HomePage', {});
     }, 1000)
-    this.animationIndex = 2;
   }
 
   build() {
     NavDestination() {
       Row() {
         Stack() {
-          Image($rawfile(this.imagesSources[this.animationIndex]))
+          Image($rawfile(this.imagesSources[Math.min(this.animationIndex, this.imagesSources.length - 1)]))
             .width('50%')
             .rotate({
               angle: this.rotateAnimation
@@ -46,7 +57,7 @@ export struct SplashPage {
         }
         .width('100%')
       }
-      .backgroundColor(this.backgroundColors[this.animationIndex])
+      .backgroundColor(this.backgroundColors[Math.min(this.animationIndex, this.backgroundColors.length - 1)])
       .alignItems(VerticalAlign.Center)
       .height('100%')
       .width('100%')

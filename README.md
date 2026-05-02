@@ -1,5 +1,3 @@
-> **Note:** To access all shared projects, get information about environment setup, and view other guides, please visit [Explore-In-HMOS-Wearable Index](https://github.com/Explore-In-HMOS-Wearable/hmos-index).
-
 # Match Results Tracker Sample App
 
 This solution is intended for ArkUI design example.
@@ -19,6 +17,33 @@ Football, Basketball and Volleyball.
 # Use Cases
 
 - In three different categories users can follow match results
+- Circular-screen optimized sport chooser with `ArcList`
+- Match explorer with search/filter, card/list switching, and result depth controls
+- **Splash-first launch flow**: App opens with `SplashPage` and then routes to home automatically.
+- **Circular bottom action on home**: `Discover` is implemented with `ArcButton` (`BOTTOM_EDGE`) for watch-friendly navigation.
+- **Enhanced sports selector**: Sport picker now uses `ArcList` / `ArcListItem` with richer sport rows and focused sport feedback.
+- **Extended results interactions**:
+  - Team filter input
+  - Card/List mode toggle
+  - Visible-results `Slider`
+  - Live `Progress` ring
+  - Empty-state messages
+- **Sport-aware UI theming**: Results screen visuals adapt to selected sport (football, basketball, volleyball), including background, accents, slider, progress, and swiper indicator colors.
+- **Circular-screen visual cleanup**: Removed rectangular outer card shells in results to better fit round watch layouts.
+- **Resource-based UI cleanup**: Most user-facing texts and color values were moved into `resources/base/element` and `resources/dark/element`.
+
+## Extended ArkUI Coverage
+
+This project now demonstrates a broader set of ArkUI components in-context for wearable UX:
+
+- `ArcList`, `ArcListItem`
+- `ArcButton`
+- `List`, `ListItem`
+- `TextInput`
+- `Toggle`
+- `Slider`
+- `Progress`
+- `Divider`
 
 # Tech Stack
 

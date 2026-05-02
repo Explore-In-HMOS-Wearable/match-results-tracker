@@ -28,7 +28,7 @@ struct Index {
       .hideNavBar(true)
       .onAppear(() => {
         if (this.pageStack.getAllPathName().length === 0) {
-          this.pageStack.pushPathByName('HomePage', null);
+          this.pageStack.pushPathByName('SplashPage', null);
         }
       })
   }

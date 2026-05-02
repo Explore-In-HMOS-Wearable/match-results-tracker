@@ -11,6 +11,102 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+    {
+      "name": "home_track",
+      "value": "Track "
+    },
+    {
+      "name": "home_latest",
+      "value": "Latest"
+    },
+    {
+      "name": "home_matches",
+      "value": "Matches"
+    },
+    {
+      "name": "home_favorite_team_placeholder",
+      "value": "Favorite team"
+    },
+    {
+      "name": "home_ready_suffix",
+      "value": "ready"
+    },
+    {
+      "name": "home_discover",
+      "value": "Discover"
+    },
+    {
+      "name": "sport_football",
+      "value": "Football"
+    },
+    {
+      "name": "sport_basketball",
+      "value": "Basketball"
+    },
+    {
+      "name": "sport_volleyball",
+      "value": "Volleyball"
+    },
+    {
+      "name": "sport_generic",
+      "value": "Match"
+    },
+    {
+      "name": "sports_latest_matches",
+      "value": "Latest matches"
+    },
+    {
+      "name": "sports_open",
+      "value": "Open"
+    },
+    {
+      "name": "sports_choose_sport",
+      "value": "Choose Sport"
+    },
+    {
+      "name": "sports_focused",
+      "value": "Focused:"
+    },
+    {
+      "name": "matches_results_suffix",
+      "value": "Results"
+    },
+    {
+      "name": "matches_full_time",
+      "value": "Full Time"
+    },
+    {
+      "name": "matches_filter_team_placeholder",
+      "value": "Filter team"
+    },
+    {
+      "name": "matches_list_view",
+      "value": "List View"
+    },
+    {
+      "name": "matches_card_view",
+      "value": "Card View"
+    },
+    {
+      "name": "matches_no_matches_found",
+      "value": "No matches found"
+    },
+    {
+      "name": "matches_try_another_team",
+      "value": "Try another team name."
+    },
+    {
+      "name": "matches_card_label",
+      "value": "Card"
+    },
+    {
+      "name": "match_draw",
+      "value": "Draw"
+    },
+    {
+      "name": "match_won",
+      "value": "Won"
     }
   ]
 }

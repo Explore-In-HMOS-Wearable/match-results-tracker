@@ -2,7 +2,8 @@ import { curves } from '@kit.ArkUI';
 
 @Component
 export struct AnimatedText {
-  @Prop message: string;
+  @Prop message: ResourceStr;
+  @Prop fontSize: number = 30;
   @State opacityValue: number = 1; // Opacity value for animation
   private translateY: number = 0; // Translation value for animation
 
@@ -10,12 +11,12 @@ export struct AnimatedText {
     Text(this.message) // Display the text from the array
       .opacity(this.opacityValue) // Apply opacity animation
       .translate({ y: this.translateY }) // Apply translation animation
-      .fontSize(30)
+      .fontSize(this.fontSize)
       .fontWeight(800)
-      .fontColor('#ff00ff39')
+      .fontColor($r('app.color.animated_text_accent'))
       .textShadow({
         radius: 20,
-        color: '#ff00ff39',
+        color: $r('app.color.animated_text_accent'),
         offsetX: 0,
         offsetY: 0
       })

@@ -3,6 +3,238 @@
     {
       "name": "start_window_background",
       "value": "#FFFFFF"
+    },
+    {
+      "name": "sport_football",
+      "value": "#298800"
+    },
+    {
+      "name": "sport_basketball",
+      "value": "#FF7B00"
+    },
+    {
+      "name": "sport_volleyball",
+      "value": "#BABA5B"
+    },
+    {
+      "name": "arc_button_bg",
+      "value": "#CC145C1F"
+    },
+    {
+      "name": "arc_button_text",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "arc_button_text_pressed",
+      "value": "#FFE7F9E9"
+    },
+    {
+      "name": "ui_divider_soft",
+      "value": "#26FFFFFF"
+    },
+    {
+      "name": "ui_input_placeholder",
+      "value": "#99FFFFFF"
+    },
+    {
+      "name": "ui_panel_background",
+      "value": "#22000000"
+    },
+    {
+      "name": "ui_accent_green",
+      "value": "#FF36FF00"
+    },
+    {
+      "name": "ui_text_secondary",
+      "value": "#DDFFFFFF"
+    },
+    {
+      "name": "ui_text_muted",
+      "value": "#D4FFFFFF"
+    },
+    {
+      "name": "ui_text_muted_alt",
+      "value": "#DEFFFFFF"
+    },
+    {
+      "name": "ui_text_counter",
+      "value": "#DCFFFFFF"
+    },
+    {
+      "name": "ui_dot_unselected",
+      "value": "#66FFFFFF"
+    },
+    {
+      "name": "animated_text_accent",
+      "value": "#FF00FF39"
+    },
+    {
+      "name": "home_gradient_top",
+      "value": "#FF00470B"
+    },
+    {
+      "name": "home_gradient_bottom",
+      "value": "#000000"
+    },
+    {
+      "name": "sports_gradient_edge",
+      "value": "#22000000"
+    },
+    {
+      "name": "sports_background_top",
+      "value": "#AA000000"
+    },
+    {
+      "name": "sports_background_bottom",
+      "value": "#FF151515"
+    },
+    {
+      "name": "matches_divider",
+      "value": "#2CFFFFFF"
+    },
+    {
+      "name": "sport_football_bg_top",
+      "value": "#FF0D2A13"
+    },
+    {
+      "name": "sport_football_bg_bottom",
+      "value": "#FF040B07"
+    },
+    {
+      "name": "sport_football_accent",
+      "value": "#FF74E88B"
+    },
+    {
+      "name": "sport_football_accent_strong",
+      "value": "#FFB9FFCB"
+    },
+    {
+      "name": "sport_football_panel",
+      "value": "#CC143021"
+    },
+    {
+      "name": "sport_football_card",
+      "value": "#CC1A402B"
+    },
+    {
+      "name": "sport_football_divider",
+      "value": "#5974E88B"
+    },
+    {
+      "name": "sport_football_slider_track",
+      "value": "#6A225939"
+    },
+    {
+      "name": "sport_football_swiper_dot",
+      "value": "#4C74E88B"
+    },
+    {
+      "name": "sport_football_text_secondary",
+      "value": "#D8EAFFF0"
+    },
+    {
+      "name": "sport_football_text_muted",
+      "value": "#B8CFE7D6"
+    },
+    {
+      "name": "sport_football_placeholder",
+      "value": "#A8D0EDD9"
+    },
+    {
+      "name": "sport_basketball_bg_top",
+      "value": "#FF452309"
+    },
+    {
+      "name": "sport_basketball_bg_bottom",
+      "value": "#FF130A05"
+    },
+    {
+      "name": "sport_basketball_accent",
+      "value": "#FFFFBE66"
+    },
+    {
+      "name": "sport_basketball_accent_strong",
+      "value": "#FFFFE5B8"
+    },
+    {
+      "name": "sport_basketball_panel",
+      "value": "#CC552C0D"
+    },
+    {
+      "name": "sport_basketball_card",
+      "value": "#CC6A3710"
+    },
+    {
+      "name": "sport_basketball_divider",
+      "value": "#59FFBE66"
+    },
+    {
+      "name": "sport_basketball_slider_track",
+      "value": "#6A6A3B17"
+    },
+    {
+      "name": "sport_basketball_swiper_dot",
+      "value": "#4CFFBE66"
+    },
+    {
+      "name": "sport_basketball_text_secondary",
+      "value": "#D8FFF1DE"
+    },
+    {
+      "name": "sport_basketball_text_muted",
+      "value": "#B8E8D5C0"
+    },
+    {
+      "name": "sport_basketball_placeholder",
+      "value": "#A8F2DABF"
+    },
+    {
+      "name": "sport_volleyball_bg_top",
+      "value": "#FF343517"
+    },
+    {
+      "name": "sport_volleyball_bg_bottom",
+      "value": "#FF121206"
+    },
+    {
+      "name": "sport_volleyball_accent",
+      "value": "#FFF4EE82"
+    },
+    {
+      "name": "sport_volleyball_accent_strong",
+      "value": "#FFFFF9C2"
+    },
+    {
+      "name": "sport_volleyball_panel",
+      "value": "#CC42411D"
+    },
+    {
+      "name": "sport_volleyball_card",
+      "value": "#CC535228"
+    },
+    {
+      "name": "sport_volleyball_divider",
+      "value": "#59F4EE82"
+    },
+    {
+      "name": "sport_volleyball_slider_track",
+      "value": "#6A5D5C25"
+    },
+    {
+      "name": "sport_volleyball_swiper_dot",
+      "value": "#4CF4EE82"
+    },
+    {
+      "name": "sport_volleyball_text_secondary",
+      "value": "#D8FFFCE2"
+    },
+    {
+      "name": "sport_volleyball_text_muted",
+      "value": "#B8E9E7CA"
+    },
+    {
+      "name": "sport_volleyball_placeholder",
+      "value": "#A8ECE8C8"
     }
   ]
 }
